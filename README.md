@@ -22,14 +22,14 @@ Pull in 'shpasser/gae-support-lumen' and 'illuminate/mail' packages via Composer
 
 Within `bootstrap/app.php`:
 
-1. Uncomment the following line in order to use the `Facades`
+- Uncomment the following line in order to use the `Facades`
 
 ```php
 $app->withFacades();
 ```
 
 
-2. Include the service providers
+- Include the service providers
 
 ```php
 $app->register('Shpasser\GaeSupportLumen\GaeSupportServiceProvider');
