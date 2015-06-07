@@ -7,6 +7,7 @@ use Shpasser\GaeSupportLumen\Storage\CacheFs;
 use Symfony\Component\VarDumper\Dumper\HtmlDumper;
 use Symfony\Component\VarDumper\Dumper\CliDumper;
 use Monolog\Handler\SyslogHandler;
+use Monolog\Logger;
 
 
 class Application extends LumenApplication {
