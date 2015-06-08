@@ -11,6 +11,8 @@ Currently supported features:
 - Database connection,
 - Filesystem.
 
+For Laravel 5 see https://github.com/shpasser/GaeSupportL5.
+
 ## Installation
 
 Pull in 'shpasser/gae-support-lumen' and 'illuminate/mail' packages via Composer.
