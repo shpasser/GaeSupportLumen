@@ -195,4 +195,53 @@ class Application extends LumenApplication {
         return parent::getMonologHandler();
     }
 
+    /**
+     * Register container bindings for the application.
+     *
+     * @return void
+     */
+    protected function registerMailBindings()
+    {
+        $this->singleton('mailer', function () {
+            $this->configure('services');
+
+            return $this->loadComponent('mail',
+                                        'Shpasser\GaeSupportLumen\Mail\MailServiceProvider',
+                                        'mailer');
+        });
+    }
+
+    /**
+     * Register container bindings for the application.
+     *
+     * @return void
+     */
+    protected function registerQueueBindings()
+    {
+        $this->singleton('queue', function () {
+            return $this->loadComponent('queue',
+                                        'Shpasser\GaeSupportLumen\Queue\QueueServiceProvider',
+                                        'queue');
+        });
+
+        $this->singleton('queue.connection', function () {
+            return $this->loadComponent('queue',
+                                        'Shpasser\GaeSupportLumen\Queue\QueueServiceProvider',
+                                        'queue.connection');
+        });
+    }
+
+    /**
+     * Determine if the given abstract type has been bound.
+     *
+     * (Overriding Container::bound)
+     *
+     * @param  string  $abstract
+     * @return bool
+     */
+    public function bound($abstract)
+    {
+        return isset($this->availableBindings[$abstract]) || parent::bound($abstract);
+    }
+
 }

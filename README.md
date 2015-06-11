@@ -33,8 +33,6 @@ $app->withFacades();
 
 ```php
 $app->register('Shpasser\GaeSupportLumen\GaeSupportServiceProvider');
-$app->register('Shpasser\GaeSupportLumen\Queue\QueueServiceProvider');
-$app->register('Shpasser\GaeSupportLumen\Mail\MailServiceProvider');
 ```
 
 ## Usage
