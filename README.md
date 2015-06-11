@@ -1,5 +1,7 @@
 # GaeSupport
 
+[![Latest Stable Version](https://poser.pugx.org/shpasser/gae-support-lumen/v/stable)](https://packagist.org/packages/shpasser/gae-support-lumen) [![Total Downloads](https://poser.pugx.org/shpasser/gae-support-lumen/downloads)](https://packagist.org/packages/shpasser/gae-support-lumen) [![Latest Unstable Version](https://poser.pugx.org/shpasser/gae-support-lumen/v/unstable)](https://packagist.org/packages/shpasser/gae-support-lumen) [![License](https://poser.pugx.org/shpasser/gae-support-lumen/license)](https://packagist.org/packages/shpasser/gae-support-lumen)
+
 Google App Engine(GAE) Support package for Lumen.
 
 Currently supported features:
@@ -8,6 +10,8 @@ Currently supported features:
 - Queue service provider,
 - Database connection,
 - Filesystem.
+
+For Laravel 5 see https://github.com/shpasser/GaeSupportL5.
 
 ## Installation
 
