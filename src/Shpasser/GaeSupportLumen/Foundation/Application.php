@@ -40,8 +40,10 @@ class Application extends LumenApplication {
 
     /**
      * Create a new GAE supported application instance.
+     *
+     * @param string $basePath
      */
-    public function __construct()
+    public function __construct($basePath = null)
     {
         $this->gaeBucketPath = null;
 
@@ -58,7 +60,7 @@ class Application extends LumenApplication {
             $this->initializeCacheFs();
         }
 
-        parent::__construct();
+        parent::__construct($basePath);
     }
 
     /**

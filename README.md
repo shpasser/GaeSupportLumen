@@ -36,7 +36,7 @@ $app->withFacades();
 - Include the service provider
 
 ```php
-$app->register('Shpasser\GaeSupportLumen\GaeSupportServiceProvider');
+$app->register(Shpasser\GaeSupportLumen\GaeSupportServiceProvider::class);
 ```
 
 ## Usage
