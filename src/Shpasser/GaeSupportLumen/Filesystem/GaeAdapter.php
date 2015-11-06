@@ -1,4 +1,4 @@
-<?php namespace Shpasser\GaeSupportL5\Filesystem;
+<?php namespace Shpasser\GaeSupportLumen\Filesystem;
 
 use League\Flysystem\Adapter\Local;
 use League\Flysystem\Config;
