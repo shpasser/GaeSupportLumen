@@ -153,6 +153,14 @@ and adds the following line to `.env.production` file:
 FILESYSTEM = gae
 ```
 
+The last but not the least, pull in 'league/flysystem' package via Composer.
+
+```js
+"require": {
+    "league/flysystem": "~1.0"
+}
+```
+
 ### Optimizations
 
 The optimizations allow the application to reduce the use of GCS, which is the only read-write
